@@ -1,0 +1,72 @@
+#header{
+  height: 100vh;
+  background-image: url('/9987.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.368);
+  /* background-blend-mode: darken; */
+}
+
+/* form */
+
+#formBox{
+  display: flex;
+  flex-direction: column;
+  padding: 60px 40px;
+  box-shadow: 0px 3px 13px #033f3fab;
+  border-radius: 4px;
+  z-index: 1;
+  position: relative;
+  bottom: 10px;
+  gap: 25px;
+}
+#formBox p{
+  color: white;
+}
+#formBox h1{
+  color: var(--green);
+}
+#form{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+#form .content{
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, 275px);
+  align-content: center;
+  justify-content: center;
+}
+.formInput{
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(193, 193, 193);
+  outline: none;
+  background: none;
+  color: white;
+}
+.formInput::placeholder{
+  color: rgb(188, 188, 188);
+}
+
+
+/* Packages and its Container */
+
+#pkgsBox .content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 940px) {
+
+  #header{
+    height: 70vh;
+  }
+
+}

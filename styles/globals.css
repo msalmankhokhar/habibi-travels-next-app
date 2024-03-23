@@ -1,0 +1,252 @@
+/* Variables */
+:root{
+
+  /* My modified colors 1 */
+  /* --green: #d77700;
+  --orange: #021e29; */
+
+  /* My modified colors 2 */
+  --green: #c07b03;
+  /* --green: #03c08f; */
+  --orange: #292202;
+
+  /* Colors of Umrah Insights */
+  /* --green: #033F3F; */
+  /* --orange: #db7e46; */
+}
+
+/* utility classes */
+.bg-theme-green{
+  background-color: var(--orange);
+  background-image: url('/bg-small.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Menu Icon */
+#menuIcon{
+  display: none;
+  border-radius: 4px;
+  padding: 10px 12px;
+  background-color: var(--green);
+  color: white;
+}
+
+/* Header Small */
+#headerSmall{
+  height: 50vh;
+  background-image: url('/h172.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.237);
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+}
+#headerSmall .pageTitle{
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  align-self: center;
+  margin-top: 70px;
+}
+
+/* Main Container */
+#main{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+/* NavBar */
+#nav{
+  display: flex;
+  padding: 1.7rem 0rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav ul{
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+#mobileMenu{
+  display: none;
+  color: white;
+  background-color: #001e31;
+  background-color: rgba(0, 30, 49, 0.845);
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease-in-out;
+  width: 75vw;
+  position: fixed;
+  z-index: 2;
+  height: 100vh;
+  top: 0px;
+  left: -75vw;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 0px;
+  align-items: center;
+  row-gap: 5vh;
+}
+
+.navItem, .navItem *{
+  color: white;
+}
+
+/* Logo Box */
+
+.logoBox{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.logoText{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  gap: 10px;
+}
+
+.logoTextSpan{
+  color: white;
+  line-height: 19px;
+}
+
+.logoTextSpan:nth-child(1){
+  font-size: 1.7rem;
+  font-weight: bold
+}
+
+.logoTextSpan:nth-child(2){
+  font-size: 1.4rem;
+}
+
+.logoImg{
+  width: 72px;
+  height: 60px;
+}
+
+/* ______________ */
+
+.navLink{
+  text-decoration: none;
+  color: white;
+}
+
+.navLink:hover{
+  color: rgb(255, 194, 82);
+}
+
+.black.navLink{
+  color: black;
+}
+
+/* Buttons */
+.myBtn{
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 22px;
+  border-radius: 4px;
+  border: 0px;
+  color: white;
+}
+
+.myBtn.btnYellow{
+  background-color: var(--green);
+}
+
+.myBtn.noBorderRadius{
+  border-radius: 0px;
+}
+
+/* Package Card */
+.pkgCard{
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 16px;
+  width: 410px;
+}
+.pkgCard .textBox{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pkgCard .textBox .featureBox{
+  display: flex;
+  justify-content: space-evenly;
+}
+.pkgCard .textBox .featureBox .feature{
+  display: flex;
+  flex-direction: column;
+}
+.pkgImg{
+  width: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+/* Footer */
+#footer{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+#footer .upper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  /* gap: 10%; */
+}
+#footer .upper .column{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+#footer .upper .column:nth-child(1){
+  max-width: 350px;
+}
+#footer .upper .column .subColumn{
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+@media screen and (max-width: 940px) {
+
+  /* Mobile Menu */
+  #menuIcon{
+    display: block;
+    align-self: center;
+  }
+
+  #mobileMenu{
+    display: flex;
+  }
+
+  #mobileMenu.open{
+    left: 0px;
+  }
+
+  /* NavBar */
+  #nav ul{
+    display: none;
+  }
+
+  /* Footer */
+  #footer .upper{
+    justify-content: normal;
+  }
+
+}
