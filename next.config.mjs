@@ -3,7 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   output: "export",
   basePath: '/github-pages',
-  distDir: "out"
+  distDir: "out",
+  images: {
+    unoptimized: true,
+  }
 };
 
 // basePath: '/habibi-travels-next-app',
