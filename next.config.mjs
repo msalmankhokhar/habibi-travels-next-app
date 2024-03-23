@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/habibi-travels-next-app',
-  output: 'export'
+  output: "export",
+  basePath: '/github-pages'
 };
+
+// basePath: '/habibi-travels-next-app',
 
 export default nextConfig;
