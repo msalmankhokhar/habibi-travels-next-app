@@ -4,10 +4,11 @@ import PkgImg from '@/public/pkg.jpg'
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import AOS from 'aos';
 
 export default function PkgOld({title, duration, price, makkahHotel, madinaHotel, makkahDuration, madinaDuration}) {
   return (
-      <div className="pkgCard">
+      <div className="pkgCard" data-aos="fade-up">
         {/* <Image src={PkgImg} alt="mosque image" className="pkgImg" /> */}
           <div className="textBox">
               <div className="top">

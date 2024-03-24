@@ -5,12 +5,18 @@ import NextTopLoader from 'nextjs-toploader';
 import ReactLoadingBar from "react-top-loading-bar";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function App({ Component, pageProps }) {
   const [progress, setProgress] = useState(0);
   const router = useRouter();
   // console.log("I am _app.js")
   useEffect(() => {
+      AOS.init({
+        duration: 500,
+        once: false,
+      })
      router.events.on("routeChangeStart", () => {
           setProgress(40);
         });
