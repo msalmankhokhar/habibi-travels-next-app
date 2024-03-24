@@ -10,9 +10,6 @@ import { useEffect } from "react";
 import Spinner from '@/public/Spinner.gif'
 import Head from "@/components/Head";
 
-const inter = Inter({ subsets: ["latin"] });
-
-
 export default function About() {
 
   return (

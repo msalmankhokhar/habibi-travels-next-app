@@ -8,7 +8,7 @@
   /* My modified colors 2 */
   --green: #c07b03;
   /* --green: #03c08f; */
-  --orange: #022729;
+  --orange: #010b0c;
 
   /* Colors of Umrah Insights */
   /* --green: #033F3F; */
@@ -31,6 +31,7 @@
   padding: 10px 12px;
   background-color: var(--green);
   color: white;
+  font-size: 1.7rem;
 }
 
 /* Header Small */
@@ -79,10 +80,9 @@
 #mobileMenu{
   display: none;
   color: white;
-  background-color: #001e31;
-  background-color: rgba(0, 30, 49, 0.845);
+  background-color: rgba(2, 30, 22, 0.781);
   backdrop-filter: blur(8px);
-  transition: 0.3s ease-in-out;
+  transition: 0.3s;
   width: 75vw;
   position: fixed;
   z-index: 2;
@@ -168,8 +168,112 @@
   border-radius: 0px;
 }
 
-/* Package Card */
+/* Package card Old */
 .pkgCard{
+  width: 410px;
+  box-shadow: 1px 1px 8px #bbbbbb;
+  /* border: 1px solid rgb(161, 161, 161); */
+  border-radius: 16px;
+}
+
+.pkgImg{
+  width: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+  height: 300px;
+}
+
+.pkgCard .textBox{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pkgCard .textBox .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pkgCard .textBox .top .duration, .pkgCard .textBox .top .price{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.pkgCard .textBox .top .duration{
+  color: #747474;
+}
+
+.pkgCard .textBox .top .price{
+  color: #2e2e2e;
+}
+
+.pkgCard .textBox .title{
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgb(1, 53, 57);
+  padding: 16px 5px;
+  border-radius: 5px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.pkgCard .textBox .title svg{
+  width: 25px;
+  height: 25px;
+}
+
+.pkgCard .textBox .title svg path{
+  color: gold;
+}
+
+.pkgCard .hotelContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pkgCard .hotelContainer .hotel .hotelTitle{
+  color: #007487;
+  margin-bottom: 3px;
+  font-size: 1.2rem;
+}
+
+.pkgCard .hotelContainer .hotel .hotelTitle span{
+  font-size: 0.9rem;
+  color: black;
+}
+.pkgCard .hotelContainer .hotel .hotelDuration{
+  font-weight: bold;
+  color: #606060;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.pkgCard .featureBox{
+  display: flex;
+  justify-content: space-around;
+}
+
+.pkgCard .featureBox .feature{
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.pkgCard .featureContainer .feature span{
+  font-weight: bold;
+  color: #545454;
+}
+
+.pkgCard .featureContainer .feature svg path{
+  color: green;
+}
+
+/* Package Card New */
+/* .pkgCard{
   border: 1px solid rgb(161, 161, 161);
   border-radius: 16px;
   width: 410px;
@@ -192,7 +296,7 @@
   width: 100%;
   overflow: hidden;
   border-radius: inherit;
-}
+} */
 
 /* Footer */
 #footer{

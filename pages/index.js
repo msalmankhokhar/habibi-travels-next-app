@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import GetQuoteForm from "@/components/GetQuoteForm";
-import Pkg from "@/components/Pkg";
+import PkgOld from "@/components/PkgOld";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -51,7 +51,7 @@ export default function Home() {
           <div className={styles.content}>
           {
             pkgList.map((pkgObj)=>{
-              return <Pkg key={pkgList.indexOf(pkgObj)} t={pkgObj.title} d={pkgObj.duration} p={pkgObj.price} />
+              return <PkgOld key={pkgList.indexOf(pkgObj)} title={pkgObj.title} duration={pkgObj.duration} price={pkgObj.price} makkahDuration={pkgObj.makkahDuration} makkahHotel={pkgObj.makkahHotel} madinaDuration={pkgObj.madinaDuration} madinaHotel={pkgObj.madinaHotel}/>
             }) 
           }
           </div>

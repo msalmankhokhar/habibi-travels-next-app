@@ -27,11 +27,13 @@ export default function NavBar() {
         <ul>
           <li className="navItem navLi"><Link className="navLink" href="/">Home</Link></li>
           <li className="navItem navLi"><Link className="navLink" href="/about">About Us</Link></li>
+          <li className="navItem navLi"><Link className="navLink" href="/contact">Contact Us</Link></li>
         </ul>
         <FontAwesomeIcon icon={faBars} id='menuIcon' onClick={toggleMobileMenu} />
         <div id="mobileMenu" className=''>
           <Link className="navLink" href="/">Home</Link>
           <Link className="navLink" href="/about">About Us</Link>
+          <Link className="navLink" href="/contact">Contact Us</Link>
         </div>
     </nav>
   )
