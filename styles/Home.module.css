@@ -41,11 +41,17 @@
 }
 .formInput{
   padding: 10px;
-  border: none;
-  border-bottom: 1px solid rgb(193, 193, 193);
   outline: none;
   background: none;
   color: white;
+  border-color: white;
+  border: 1px solid rgb(178, 178, 178);
+  outline: none;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+.formInput:focus{
+  border-color: white;
 }
 .formInput::placeholder{
   color: rgb(188, 188, 188);
